@@ -1,0 +1,28 @@
+flowchart TD
+    User([Usuario]) -->|consulta NL| UI[app.py: st.chat_input]
+    UI -->|strip + validar longitud/vacío| Valid{¿válida?}
+    Valid -->|no| Warn[st.warning] --> User
+    Valid -->|sí| Answer["agent.answer(query, df, schema)"]
+
+    Answer -->|system prompt + tools| LLM1[LLM: elige tool_use]
+    LLM1 --> HasTool{¿hay tool_use?}
+    HasTool -->|no| RErr[RuntimeError: respondió texto]
+    HasTool -->|sí| RunTool["charts.run_tool(name, df, params)"]
+
+    RunTool --> ToolOK{¿ChartError?}
+    ToolOK -->|sí| Retry{¿quedan reintentos?}
+    Retry -->|sí, reenvía tool_result is_error| LLM1
+    Retry -->|no| FinalErr[RuntimeError: no se pudo generar gráfico]
+
+    ToolOK -->|no: fig + summary| Explain["agent._explain (2ª llamada)"]
+    Explain --> LLM2[LLM: explicación textual]
+    LLM2 -->|fig, texto| Persist["app.py: fig.savefig ultimo_grafico.png"]
+    Persist --> Show["st.image + st.write"]
+    Show --> Hist[["session_state.history.append"]]
+    Hist --> Close[plt.close fig]
+    Close --> User
+
+    RErr -->|RuntimeError| UIErr[app.py: st.error]
+    FinalErr -->|RuntimeError| UIErr
+    RunTool -.->|ChartError propagado| UIErr
+    UIErr --> User

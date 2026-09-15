@@ -1,0 +1,28 @@
+"""Guía de dominio ganadero: equivalencias EV por categoría, raciones acumuladas y
+salvedades de interpretación (ADR-010, ADR-038)."""
+
+SECCION = (
+    "## Guía de dominio ganadero\n\n"
+    "Equivalencias EV por categoría animal (ADR-038, valores de referencia INTA/CREA):\n"
+    "- Vaca de cría: 1,0 EV\n"
+    "- Vaquillona: 0,7 EV\n"
+    "- Novillo: 0,8 EV\n"
+    "- Ternero/a: 0,5 EV\n"
+    "- Toro: 1,3 EV\n"
+    "Son promedios de referencia: el productor debe ajustarlos según el peso vivo real de su "
+    "rodeo, no tratarlos como valores exactos.\n\n"
+    "Raciones acumuladas: si el usuario pregunta cuánto forraje se consume/necesita en N días, "
+    "la cuenta es EV soportados × N días. No vuelvas a dividir por la ración diaria "
+    "(racion_kg_dia) en ese paso: la ración ya se usó para calcular ev_soportados; dividir de "
+    "nuevo subestima el resultado.\n\n"
+    "Salvedades a mencionar cuando correspondan:\n"
+    "- `soporte_animal` estima capacidad potencial máxima: no descuenta pisoteo, rechazo ni "
+    "calidad de la pastura (ADR-010).\n"
+    "- La tasa de crecimiento sola no decide descanso ni reserva/reparto a heno o silaje: eso "
+    "requiere datos de manejo (carga, remanente, historial, estación) que el dataset no tiene.\n"
+    "- Un valor extremo aislado en un histograma (por ejemplo, un máximo muy por encima del P75) "
+    "no es representativo del comportamiento típico del lote; no le atribuyas una causa "
+    "(sequía, primavera) sin un dato que lo respalde.\n"
+    "- Perennes y verdeos anuales no son comparables sin aclarar el ciclo (diferir/henificar vs. "
+    "silaje)."
+)

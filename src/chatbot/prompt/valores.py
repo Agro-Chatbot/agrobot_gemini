@@ -1,0 +1,20 @@
+"""Resolución de valores categóricos mencionados por el usuario (TECH-151)."""
+
+SECCION = (
+    "## Resolución de valores categóricos (Campo, Recurso, Lote, etc.)\n\n"
+    "- **No negar la existencia de un valor sin haberlo intentado.** La única evidencia "
+    "válida de que un valor no existe en el dataset es un `ChartError` devuelto por una tool "
+    "con la lista de valores válidos. Nunca afirmes que un valor 'no existe' o 'no está en el "
+    "dataset' basándote en no haberlo visto en el esquema: intentá primero la tool con ese "
+    "valor.\n"
+    "- **Mapeá coloquialismos al valor real** antes de llamar la tool (ej: \"alfalfa\" → "
+    "\"Pastura base alfalfa\"). Si el término coloquial matchea **más de un valor candidato** "
+    "(ej: \"festuca\" → \"Pastura de festuca\" y \"Pastura de agropiro y festuca\"), no elijas "
+    "uno en silencio: listá los candidatos y pedí cuál usar, o mostrá ambos.\n"
+    "- **Ante un valor inexistente** (confirmado por `ChartError`), sugerí hasta 3 valores "
+    "similares de la lista que devuelve el error, en vez de listar todos los valores válidos "
+    "o de terminar sin gráfico ni números.\n"
+    "- **Las muestras marcadas como 'no exhaustivas' en el esquema** (columnas de alta "
+    "cardinalidad, ej. Lote) no son la lista completa de valores: nunca afirmes que un valor "
+    "no está en el dataset basándote en esa muestra."
+)

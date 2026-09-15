@@ -1,0 +1,23 @@
+# Secretos (nunca subir; conservar solo los .example)
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Salidas de ejecución
+output/
+
+# macOS
+.DS_Store
+
+# Datasets reales (nunca versionar; data/sample.csv es la excepción)
+data/*.csv
+!data/sample.csv
+data/*.xlsx
+
+# Secretos de Streamlit
+.streamlit/secrets.toml

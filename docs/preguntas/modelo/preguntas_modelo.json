@@ -1,0 +1,1951 @@
+{
+  "schema_version": 1,
+  "generado_por": "scripts/preguntas_modelo.py",
+  "updated_at": "2026-09-14 16:26",
+  "preguntas": [
+    {
+      "id": "M001",
+      "grupo": "E01",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:01",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "A. Tasas de crecimiento",
+      "pregunta": "¿Cuál es la tasa de crecimiento promedio (Kg MS/ha/día) por tipo de recurso forrajero?",
+      "hash_texto": "11efc064f483",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M002",
+      "grupo": "E02",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:02",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "A. Tasas de crecimiento",
+      "pregunta": "¿Qué lotes tienen las mayores tasas de crecimiento promedio?",
+      "hash_texto": "7f25b024304a",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M003",
+      "grupo": "E03",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:03",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "A. Tasas de crecimiento",
+      "pregunta": "¿Cómo evolucionó la tasa de crecimiento promedio a lo largo del tiempo?",
+      "hash_texto": "091abc1c43b7",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M004",
+      "grupo": "E04",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:04",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "A. Tasas de crecimiento",
+      "pregunta": "¿Cómo se distribuyen las tasas de crecimiento en todo el establecimiento?",
+      "hash_texto": "da5fa12bde72",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M005",
+      "grupo": "E05",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:05",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "A. Tasas de crecimiento",
+      "pregunta": "¿Qué campo tiene el mejor rendimiento forrajero promedio?",
+      "hash_texto": "ca61d1b76854",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M006",
+      "grupo": "E06",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:06",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "B. Comparación entre campañas",
+      "pregunta": "¿Cómo se comparan las tasas de crecimiento promedio entre campañas (2019–2026)?",
+      "hash_texto": "1691c9bb6cfb",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M007",
+      "grupo": "E07",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:07",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "B. Comparación entre campañas",
+      "pregunta": "¿Qué campaña tuvo la mayor producción de materia seca acumulada?",
+      "hash_texto": "e72cccbe59e0",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M008",
+      "grupo": "E08",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:08",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "B. Comparación entre campañas",
+      "pregunta": "¿El campo natural rindió mejor en la campaña 2023 que en la 2024?",
+      "hash_texto": "5010632e8eb0",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M009",
+      "grupo": "E09",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:09",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "B. Comparación entre campañas",
+      "pregunta": "Comparar el rendimiento de las pasturas consociadas entre campañas.",
+      "hash_texto": "f2ca4d90f595",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M010",
+      "grupo": "E10",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:10",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "C. Impacto de sequía en el crecimiento del recurso",
+      "pregunta": "¿En qué períodos cayó marcadamente la tasa de crecimiento (posibles sequías)?",
+      "hash_texto": "5a0a91ed27a7",
+      "tags": [],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M011",
+      "grupo": "E11",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:11",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "C. Impacto de sequía en el crecimiento del recurso",
+      "pregunta": "¿Cómo impactó la sequía de 2022/2023 en el crecimiento del campo natural?",
+      "hash_texto": "a0cbecf9c118",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M012",
+      "grupo": "E12",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:12",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "C. Impacto de sequía en el crecimiento del recurso",
+      "pregunta": "Comparar la tasa de crecimiento de un año seco contra un año normal.",
+      "hash_texto": "cbe9077afe48",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M013",
+      "grupo": "E13",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:13",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "C. Impacto de sequía en el crecimiento del recurso",
+      "pregunta": "¿Qué recursos fueron más resistentes a la caída de crecimiento en años secos?",
+      "hash_texto": "aabc88a6183b",
+      "tags": [],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M014",
+      "grupo": "E14",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:14",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "D. Soporte animal",
+      "pregunta": "¿Cuántos animales puede soportar el lote X en este período?",
+      "hash_texto": "1441ed4f74e0",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M015",
+      "grupo": "E15",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:15",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "D. Soporte animal",
+      "pregunta": "¿Cuántos animales soporta el conjunto de lotes de campo natural en un período dado?",
+      "hash_texto": "04953b58a97b",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M016",
+      "grupo": "E16",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:16",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "D. Soporte animal",
+      "pregunta": "¿Cuál es la carga animal soportable (EV/ha) promedio por campo?",
+      "hash_texto": "b70595eb6572",
+      "tags": [],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M017",
+      "grupo": "E17",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:17",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "E. Demanda animal y raciones",
+      "pregunta": "¿Cuánta materia seca produce por día el lote X para alimentar al rodeo? (Kg MS × Superficie)",
+      "hash_texto": "ae7db172cb6f",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M018",
+      "grupo": "E18",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:18",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "E. Demanda animal y raciones",
+      "pregunta": "¿Qué superficie de este recurso necesito para sostener N animales?",
+      "hash_texto": "26fbb734488f",
+      "tags": [],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M019",
+      "grupo": "E19",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:19",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "F. Estacionalidad y composición del recurso",
+      "pregunta": "¿Cómo varía la tasa de crecimiento según la estación del año?",
+      "hash_texto": "12b7ac079054",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M020",
+      "grupo": "E20",
+      "variante": "unica",
+      "origen": {
+        "tipo": "ronda1",
+        "archivo": "docs/preguntas/00-preguntas_ejemplo.md",
+        "id_origen": "00-preguntas_ejemplo:20",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "F. Estacionalidad y composición del recurso",
+      "pregunta": "¿Qué proporción de la superficie total corresponde a cada tipo de recurso?",
+      "hash_texto": "6d41b563dffc",
+      "tags": [
+        "respondible_declarada"
+      ],
+      "tool_esperada": null,
+      "expectativa_preregistrada": null,
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "sin_curar",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M021",
+      "grupo": "P01",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:01:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "¿Qué diferencia de tasa de crecimiento tengo hoy entre el Lote 4 y el Lote 8 de mi campo (Il Garda)?",
+      "hash_texto": "85912ff02c2c",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Lote no expresable con un único filter_col.",
+        "veredicto_esperado": "\"Il Garda\" no existe como Campo real → se espera ChartError con la lista de campos; riesgo de que el agente sustituya por un campo real cualquiera (Hipótesis 2) en vez de señalar que no reconoce el campo."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M022",
+      "grupo": "P01",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:01:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "¿Qué diferencia de tasa de crecimiento tengo el 2026-08-21 entre el Lote 4 y el Lote 8 del campo Montenegro?",
+      "hash_texto": "1a0d130f3327",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Lote no expresable con un único filter_col.",
+        "veredicto_esperado": "\"Montenegro\" existe, pero el filtro compuesto Campo+Lote sigue sin ser expresable (Hipótesis 1); se espera que el agente no aísle limpiamente Lote 4 vs 8, o dé una respuesta parcial por lectura interpretativa de un bar_chart filtrado solo por Campo."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M023",
+      "grupo": "P02",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:02:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "¿Cuál es el lote con mayor crecimiento activo este mes con pastura base alfalfa para mandar el rodeo de ordeñe en Banchero?",
+      "hash_texto": "4412ed6753d0",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Recurso.",
+        "veredicto_esperado": "\"Banchero\" no existe como Campo real (candidata a Hipótesis 2) → ChartError con lista de campos; aunque corrija el campo, el filtro compuesto Campo+Recurso sigue sin ser posible."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M024",
+      "grupo": "P02",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:02:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "¿Cuál es el lote con mayor crecimiento activo en agosto de 2026 con Pastura base alfalfa para mandar el rodeo de ordeñe en el campo Quinigua?",
+      "hash_texto": "699b6c17e82d",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Recurso.",
+        "veredicto_esperado": "\"Quinigua\" existe, pero el filtro compuesto Campo+Recurso persiste como bloqueante."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M025",
+      "grupo": "P03",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:03:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "Comparame la producción histórica del Lote 3c contra el Lote 4b durante la primavera en La Armonia.",
+      "hash_texto": "c92c5f4f6d1e",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Estacion.",
+        "veredicto_esperado": "\"La Armonia\" no existe como Campo real (candidata a Hipótesis 2); el filtro compuesto Campo+Estacion sigue sin ser posible aunque se corrija el nombre."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M026",
+      "grupo": "P03",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:03:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "Comparame la producción histórica del Lote 3c contra el Lote 4b durante la primavera en el campo Capandeguy.",
+      "hash_texto": "2ce959114f66",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Estacion.",
+        "veredicto_esperado": "\"Capandeguy\" existe, pero el filtro compuesto persiste."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M027",
+      "grupo": "P04",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:04:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "¿Qué lote con campo natural respondió mejor a las últimas lluvias del mes en La Familia?",
+      "hash_texto": "54e361f83a8e",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Recurso + sin columna de lluvia.",
+        "veredicto_esperado": "\"La Familia\" no existe como Campo real (candidata a Hipótesis 2), y persisten los dos motivos estructurales (filtro compuesto Campo+Recurso y sin columna de lluvia)."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M028",
+      "grupo": "P04",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:04:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "¿Qué lote con Campo natural respondió mejor a las últimas lluvias de agosto de 2026 en el campo La Verónica?",
+      "hash_texto": "97f734debdcc",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — filtro compuesto Campo+Recurso + sin columna de lluvia.",
+        "veredicto_esperado": "\"La Verónica\" existe, pero ambos motivos estructurales persisten igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M029",
+      "grupo": "P05",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:05:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "Decime cuáles son los 3 lotes con menor tasa de crecimiento en lo que va del mes para Barbados.",
+      "hash_texto": "cff54cdf0901",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — sin ranking bottom-N nativo.",
+        "veredicto_esperado": "\"Barbados\" no existe como Campo real (candidata a Hipótesis 2)."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M030",
+      "grupo": "P05",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:05:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Lotes (Dentro del mismo campo)",
+      "pregunta": "Decime cuáles son los 3 lotes con menor tasa de crecimiento entre el 1 y el 21 de agosto de 2026 para el campo El Puesto.",
+      "hash_texto": "6137f71e8c4a",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Hipótesis 1 — sin ranking bottom-N nativo.",
+        "veredicto_esperado": "\"El Puesto\" existe; sigue sin haber parámetro nativo de ranking, aunque la lectura interpretativa de 3 valores mínimos es más plausible acá que en el resto del bloque."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M031",
+      "grupo": "P06",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:06:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "¿Qué rinde más en este momento: los verdeos de invierno o las pasturas consociadas en La Familia?",
+      "hash_texto": "1a52482dfaf9",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "1 filtro (Campo) + x=Recurso alcanza; el resultado trae ambos recursos como filas separadas.",
+        "veredicto_esperado": "\"La Familia\" no existe como Campo real (candidata a Hipótesis 2) → se espera ChartError; riesgo de que el agente sustituya por un campo real cualquiera sin haber deducido que corresponde a La Verónica."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M032",
+      "grupo": "P06",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:06:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "¿Qué rinde más el 2026-08-21: los verdeos de invierno o las pasturas consociadas en el campo La Verónica?",
+      "hash_texto": "297230cd599b",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "1 filtro (Campo) + x=Recurso alcanza; el resultado trae ambos recursos como filas separadas.",
+        "veredicto_esperado": "\"La Verónica\" existe; se espera una respuesta correcta en una sola llamada."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M033",
+      "grupo": "P07",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:07:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "¿Cómo viene la tasa de crecimiento de la alfalfa comparada con la festuca este mes?",
+      "hash_texto": "b70687eaf429",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Recurso; ambigüedad de valores de Recurso en la variante literal.",
+        "veredicto_esperado": "\"alfalfa\" y \"festuca\" a secas no son valores exactos de Recurso; si el agente intenta filtrar por esos valores literales dispararía ChartError (variante de Hipótesis 2 sobre Recurso); si agrupa por Recurso sin filtrar no hay error pero puede confundir \"Pastura de agropiro y festuca\" con \"festuca\" a secas."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M034",
+      "grupo": "P07",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:07:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "¿Cómo viene la tasa de crecimiento de la Pastura base alfalfa comparada con la Pastura de festuca en agosto de 2026?",
+      "hash_texto": "26431381cf04",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Recurso; ambigüedad de valores de Recurso en la variante literal.",
+        "veredicto_esperado": "Valores resueltos explícitamente en el enunciado; se espera una respuesta correcta sin ambigüedad de qué valor de Recurso corresponde."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M035",
+      "grupo": "P08",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:08:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "Históricamente, ¿cuál recurso me da más raciones entre enero y marzo en Bunge?",
+      "hash_texto": "a58b16df08cd",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de mes multianual; soporte_animal no agrupa por Recurso.",
+        "veredicto_esperado": "\"Bunge\" no existe como Campo real (candidata a Hipótesis 2), y ambos motivos estructurales persisten aunque se corrija el nombre."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M036",
+      "grupo": "P08",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:08:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "Históricamente, ¿cuál recurso me da más raciones entre enero y marzo en el campo LA FRANCIA?",
+      "hash_texto": "0de98bbca9a8",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de mes multianual; soporte_animal no agrupa por Recurso.",
+        "veredicto_esperado": "\"LA FRANCIA\" existe, pero ambos motivos estructurales persisten igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M037",
+      "grupo": "P09",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:09:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "En años secos, ¿qué recurso forrajero mantuvo mejor la producción de materia seca en Carro Quemado?",
+      "hash_texto": "0b101fb72cdb",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de lluvia — no se puede determinar objetivamente qué años fueron secos.",
+        "veredicto_esperado": "\"Carro Quemado\" no existe como Campo real (candidata a Hipótesis 2); el agente no debería inventar qué años fueron secos."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M038",
+      "grupo": "P09",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:09:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "En años secos, ¿qué recurso forrajero mantuvo mejor la producción de materia seca en el campo Miramonte?",
+      "hash_texto": "53c3f052dd95",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de lluvia — no se puede determinar objetivamente qué años fueron secos.",
+        "veredicto_esperado": "\"Miramonte\" existe, pero la identificación de años secos sigue sin tener respaldo en el dataset."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M039",
+      "grupo": "P10",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:10:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "¿Cuál es la brecha de crecimiento entre el campo natural y las pasturas implantadas hoy en Casco?",
+      "hash_texto": "25e5b3da1e80",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Bucketing \"pasturas implantadas\" (todo menos Campo natural) no soportado por ninguna tool.",
+        "veredicto_esperado": "\"Casco\" no existe como Campo real (candidata a Hipótesis 2), y persiste el problema de bucketing aunque se corrija el campo."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M040",
+      "grupo": "P10",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:10:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Recursos Forrajeros (Mismo campo)",
+      "pregunta": "¿Cuál es la brecha de crecimiento entre el Campo natural y las pasturas implantadas el 2026-08-21 en el campo SAN MIGUEL?",
+      "hash_texto": "2d0d57a326d1",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Bucketing \"pasturas implantadas\" (todo menos Campo natural) no soportado por ninguna tool.",
+        "veredicto_esperado": "\"SAN MIGUEL\" existe, pero el bucketing \"implantadas\" sigue sin estar soportado."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M041",
+      "grupo": "P11",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:11:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿Cuál de mis campos tiene hoy la mayor disponibilidad de raciones totales?",
+      "hash_texto": "6d451ad3a4df",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "soporte_animal no agrupa por Campo; bar_chart/line_chart no multiplican dos columnas numéricas.",
+        "veredicto_esperado": "No hay campo ficticio (Hipótesis 2 no aplica); riesgo real: que el agente use bar_chart(x=Campo, y=tasa, agg=mean) (tasa promedio, no disponibilidad total) y lo presente como \"raciones totales\", conceptualmente incorrecto."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M042",
+      "grupo": "P11",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:11:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿Cuál de los campos del dataset tiene el 2026-08-21 la mayor disponibilidad de raciones totales?",
+      "hash_texto": "bd87779fa7a9",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "soporte_animal no agrupa por Campo; bar_chart/line_chart no multiplican dos columnas numéricas.",
+        "veredicto_esperado": "Texto casi idéntico a la literal; mismo riesgo e imposibilidad estructural."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M043",
+      "grupo": "P12",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:12:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "Comparame la tasa de crecimiento promedio de Bunge contra Don Julio este mes.",
+      "hash_texto": "63c2252e0658",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Campo (agrupa por todos los campos; el agente lee los 2 relevantes del resultado).",
+        "veredicto_esperado": "\"Bunge\" y \"Don Julio\" no existen como valores reales de Campo; como la tool esperada agrupa por todos los campos, no debería disparar ChartError por esta vía, pero el agente necesita, en el texto, identificar qué filas corresponden a esos nombres (que no aparecen en el resultado real: aparecen \"LA FRANCIA\" y \"La Oración\"); se espera que señale que no los reconoce, no que adivine la correspondencia."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M044",
+      "grupo": "P12",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:12:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "Comparame la tasa de crecimiento promedio del campo LA FRANCIA contra el campo La Oración en agosto de 2026.",
+      "hash_texto": "269e4f7924a3",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Campo (agrupa por todos los campos; el agente lee los 2 relevantes del resultado).",
+        "veredicto_esperado": "\"LA FRANCIA\" y \"La Oración\" existen y aparecen directamente en el resultado; se espera una comparación correcta."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M045",
+      "grupo": "P13",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:13:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿En cuál de los dos campos impactó más la falta de lluvias del último trimestre (La cabrera o La escondida?",
+      "hash_texto": "52efaed08a3f",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de lluvia.",
+        "veredicto_esperado": "\"La cabrera\" y \"La escondida\" no existen como Campo real (candidatas a Hipótesis 2 si el agente intenta filtrar); en cualquier caso, la falta de columna de lluvia bloquea la pregunta igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M046",
+      "grupo": "P13",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:13:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿En cuál de los dos campos impactó más la falta de lluvias del período 21 de mayo al 21 de agosto de 2026 (el campo Los Ombues o el campo BASARRI?",
+      "hash_texto": "a69de9ed402b",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de lluvia.",
+        "veredicto_esperado": "\"Los Ombues\" y \"BASARRI\" existen, pero la falta de columna de lluvia sigue bloqueando la pregunta."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M047",
+      "grupo": "P14",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:14:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿Qué campo tiene el mejor promedio histórico de crecimiento de verdeos para el mes de octubre?",
+      "hash_texto": "907c46faa2e7",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna/derivada de mes calendario agregable a través de varios años.",
+        "veredicto_esperado": "No hay campo ficticio; el motivo estructural (falta de columna de mes) aplica igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M048",
+      "grupo": "P14",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:14:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿Qué campo tiene el mejor promedio histórico de crecimiento de verdeos para el mes de octubre?",
+      "hash_texto": "907c46faa2e7",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna/derivada de mes calendario agregable a través de varios años.",
+        "veredicto_esperado": "Texto casi idéntico a la literal; mismo motivo estructural, sin diferencia esperada entre variantes."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M049",
+      "grupo": "P15",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:15:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿Cómo varió la producción de raciones por hectárea entre La Paz y La Loma en los últimos 3 años?",
+      "hash_texto": "f3060ca6f4cc",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Agrupación doble Campo×tiempo; requeriría 2+ tool calls válidas, y answer() ejecuta como máximo una.",
+        "veredicto_esperado": "\"La Paz\" y \"La Loma\" no existen como Campo real (candidatas a Hipótesis 2), y persiste la limitación estructural de agrupación doble."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M050",
+      "grupo": "P15",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:15:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Comparación entre Campos (Misma empresa / administración)",
+      "pregunta": "¿Cómo varió la producción de raciones por hectárea entre el campo 4 Robles y el campo LA NICOLASA entre el 21 de agosto de 2023 y el 21 de agosto de 2026?",
+      "hash_texto": "79bf86b07073",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Agrupación doble Campo×tiempo; requeriría 2+ tool calls válidas, y answer() ejecuta como máximo una.",
+        "veredicto_esperado": "\"4 Robles\" y \"LA NICOLASA\" existen, pero la limitación estructural persiste igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M051",
+      "grupo": "P16",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:16:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "¿Cómo se compara el crecimiento de este mes con el mismo mes de un año seco como el 2022/2023 para el grupo de campos?",
+      "hash_texto": "5bcbd990bcc1",
+      "tags": [],
+      "tool_esperada": "line_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Fecha, rango que cubre ambos períodos (el año seco viene dado por el usuario, no hay que deducirlo).",
+        "veredicto_esperado": "No hay campo ficticio (Hipótesis 2 no aplica); riesgo distinto: \"este mes\" es relativo a la fecha de referencia del dataset (2026-08-21), no a la fecha real de ejecución — si el agente resuelve \"este mes\" contra la fecha del sistema el rango quedaría mal ubicado; riesgo adicional de serie densa de 4 años."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M052",
+      "grupo": "P16",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:16:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "¿Cómo se compara el crecimiento de agosto de 2026 con agosto de 2022 (año seco de referencia) para el grupo de campos?",
+      "hash_texto": "6381e22c0572",
+      "tags": [],
+      "tool_esperada": "line_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Fecha, rango que cubre ambos períodos (el año seco viene dado por el usuario, no hay que deducirlo).",
+        "veredicto_esperado": "El rango ya viene resuelto explícitamente en el enunciado, lo que reduce el riesgo de fecha relativa mal anclada; persiste el riesgo de la serie densa."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M053",
+      "grupo": "P17",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:17:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "En un año con más de 800 mm acumulados, ¿cuál fue la tasa máxima que alcanzaron las alfalfas?",
+      "hash_texto": "3559a3409ef9",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "[IRREDUCIBLE: sin-columna-de-lluvia] — marcado explícitamente en 01-preguntas_normalizadas.md.",
+        "veredicto_esperado": "Sin dato de lluvia, el agente no puede identificar qué año superó los 800mm; se espera que lo señale explícitamente, no que invente un año o una tasa."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M054",
+      "grupo": "P17",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:17:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "`[IRREDUCIBLE: sin-columna-de-lluvia]` En un año con más de 800 mm acumulados, ¿cuál fue la tasa máxima que alcanzaron las alfalfas? — el dataset no tiene columna de lluvia/precipitación acumulada; no hay forma de identificar qué año del CSV superó los 800 mm.",
+      "hash_texto": "7b253b428001",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "[IRREDUCIBLE: sin-columna-de-lluvia] — marcado explícitamente en 01-preguntas_normalizadas.md.",
+        "veredicto_esperado": "Mismo motivo; el documento normalizado ya lo marca irreducible, no cambia entre variantes."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M055",
+      "grupo": "P18",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:18:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "¿A partir de cuántos milímetros de lluvia en el mes empiezo a ver un salto en la tasa de crecimiento del Lote 14agropiro de Mis Hijos?",
+      "hash_texto": "e376a186d532",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "[IRREDUCIBLE: sin-columna-de-lluvia] — marcado explícitamente en 01-preguntas_normalizadas.md.",
+        "veredicto_esperado": "\"Mis Hijos\" no existe como Campo real (candidata a Hipótesis 2 si el agente intenta filtrar); en cualquier caso el motivo de fondo (sin lluvia) bloquea la pregunta."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M056",
+      "grupo": "P18",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:18:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "`[IRREDUCIBLE: sin-columna-de-lluvia]` ¿A partir de cuántos milímetros de lluvia en el mes empiezo a ver un salto en la tasa de crecimiento del Lote 14agropiro del campo Shaw? — el campo y el lote sí quedan resueltos (Shaw / 14agropiro), pero la pregunta pide un umbral en milímetros que el dataset no tiene forma de expresar.",
+      "hash_texto": "dc0bc4c047d5",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "[IRREDUCIBLE: sin-columna-de-lluvia] — marcado explícitamente en 01-preguntas_normalizadas.md.",
+        "veredicto_esperado": "\"Shaw\"/\"14agropiro\" resuelven correctamente, pero la pregunta sigue siendo irreducible por falta de columna de lluvia."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M057",
+      "grupo": "P19",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:19:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "Comparame la producción del Lote 20b en este verano contra el verano del año pasado en Mis Hijos.",
+      "hash_texto": "cdf5d47e9436",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Filtro compuesto Campo+Lote + 2 rangos de fecha discontinuos (date_from/date_to solo admite un rango continuo).",
+        "veredicto_esperado": "\"Mis Hijos\" no existe como Campo real (candidata a Hipótesis 2); persisten ambos motivos estructurales aunque se corrija el nombre."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M058",
+      "grupo": "P19",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:19:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "Comparame la producción del Lote 20b del campo Shaw entre diciembre de 2025-febrero de 2026 y diciembre de 2024-febrero de 2025.",
+      "hash_texto": "a26bde95fbbc",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Filtro compuesto Campo+Lote + 2 rangos de fecha discontinuos (date_from/date_to solo admite un rango continuo).",
+        "veredicto_esperado": "\"Shaw\" y \"20b\" resuelven correctamente, pero ambos motivos estructurales bloquean la pregunta igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M059",
+      "grupo": "P20",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:20:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "¿Qué campo respondió mejor a la salida del invierno en los años fríos?",
+      "hash_texto": "1e1220b5d761",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de temperatura — no se puede determinar objetivamente qué años fueron fríos.",
+        "veredicto_esperado": "No hay campo ficticio; el motivo estructural (sin columna de temperatura) aplica igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M060",
+      "grupo": "P20",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:20:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Sensibilidad Climática y Años Históricos",
+      "pregunta": "¿Qué campo respondió mejor a la salida del invierno en los años fríos?",
+      "hash_texto": "1e1220b5d761",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de temperatura — no se puede determinar objetivamente qué años fueron fríos.",
+        "veredicto_esperado": "Texto casi idéntico a la literal; mismo motivo estructural."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M061",
+      "grupo": "P21",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:21:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "Si cierro el Lote 8a durante 20 días desde hoy, ¿cuántas raciones estimadas voy a acumular según el histórico de este mes en Mis Hijos?",
+      "hash_texto": "acf88c323004",
+      "tags": [],
+      "tool_esperada": "soporte_animal",
+      "expectativa_preregistrada": {
+        "motivo": "1 filtro (Campo); la proyección a 20 días se espera en el texto de la explicación (según diseño del system prompt).",
+        "veredicto_esperado": "\"Mis Hijos\" no existe como Campo real (candidata a Hipótesis 2). Riesgo adicional: Lote \"8a\" no es único (también aparece en Miramonte) — si el agente filtra solo por Lote=\"8a\" sin fijar Campo, mezclaría datos de 2 campos reales distintos; además el tool no calcula la acumulación a 20 días por sí solo."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M062",
+      "grupo": "P21",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:21:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "Si cierro el Lote 8a del campo Shaw durante 20 días desde el 2026-08-21, ¿cuántas raciones estimadas voy a acumular según el histórico de agosto?",
+      "hash_texto": "f724830a20bb",
+      "tags": [],
+      "tool_esperada": "soporte_animal",
+      "expectativa_preregistrada": {
+        "motivo": "1 filtro (Campo); la proyección a 20 días se espera en el texto de la explicación (según diseño del system prompt).",
+        "veredicto_esperado": "\"Shaw\" existe; se espera una tool call válida, con los mismos dos riesgos de fondo (aislar 8a de Shaw y no de Miramonte, y la proyección a 20 días hecha correctamente en texto)."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M063",
+      "grupo": "P22",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:22:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "¿Cuál es el recurso forrajero de Los Amigos que más rápido recupera la tasa de crecimiento después de una lluvia?",
+      "hash_texto": "a584a0b4ed64",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de lluvia — no hay forma de identificar eventos de lluvia ni medir velocidad de recuperación.",
+        "veredicto_esperado": "\"Los Amigos\" no existe como Campo real (candidata a Hipótesis 2); el motivo de fondo (sin lluvia) bloquea la pregunta igual."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M064",
+      "grupo": "P22",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:22:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "¿Cuál es el recurso forrajero del campo Pichi Hue que más rápido recupera la tasa de crecimiento después de una lluvia?",
+      "hash_texto": "6f1eac74b9a4",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Sin columna de lluvia — no hay forma de identificar eventos de lluvia ni medir velocidad de recuperación.",
+        "veredicto_esperado": "\"Pichi Hue\" existe, pero la falta de columna de lluvia sigue bloqueando la pregunta."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M065",
+      "grupo": "P23",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:23:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "¿Qué pradera me conviene destinar a reserva (fardo/silaje) según las tasas de crecimiento de esta primavera?",
+      "hash_texto": "db437a3d767a",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Recurso, rango resuelto (no hay campo específico).",
+        "veredicto_esperado": "No hay campo ficticio (Hipótesis 2 no aplica); riesgo específico: \"esta primavera\" es una fecha relativa que debe resolverse contra la fecha de referencia del dataset (2026-08-21 → sep-nov 2025), no contra la fecha real de ejecución; si el agente usa la fecha del sistema podría calcular un rango de primavera distinto (o vacío)."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M066",
+      "grupo": "P23",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:23:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "¿Qué pradera me conviene destinar a reserva (fardo/silaje) según las tasas de crecimiento de septiembre-noviembre de 2025 (última primavera completa)?",
+      "hash_texto": "bd58ed81fde1",
+      "tags": [],
+      "tool_esperada": "bar_chart",
+      "expectativa_preregistrada": {
+        "motivo": "Sin filtro, x=Recurso, rango resuelto (no hay campo específico).",
+        "veredicto_esperado": "El rango ya viene resuelto explícitamente (\"septiembre-noviembre de 2025\"), lo que elimina el riesgo de fecha relativa mal anclada presente en la literal."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M067",
+      "grupo": "P24",
+      "variante": "literal",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas.md",
+        "id_origen": "01-preguntas:24:literal",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "¿Qué lotes de campo natural están creciendo por debajo del promedio del campo Las gaviotas y necesitan descanso?",
+      "hash_texto": "d855a2969643",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Filtro compuesto Campo+Recurso + el promedio general del campo como un tercer valor de referencia no calculable junto al desglose filtrado.",
+        "veredicto_esperado": "\"Las gaviotas\" no existe como Campo real (candidata a Hipótesis 2); persiste el filtro compuesto aunque se corrija el nombre."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    },
+    {
+      "id": "M068",
+      "grupo": "P24",
+      "variante": "normalizada",
+      "origen": {
+        "tipo": "ronda2",
+        "archivo": "docs/preguntas/01-preguntas/01-preguntas_normalizadas.md",
+        "id_origen": "01-preguntas:24:normalizada",
+        "fecha_alta": "2026-09-14"
+      },
+      "categoria": "Toma de Decisiones de Manejo y Fertilización",
+      "pregunta": "¿Qué lotes de Campo natural están creciendo por debajo del promedio del campo SAN JOSÉ y necesitan descanso?",
+      "hash_texto": "1cf7285a65cf",
+      "tags": [],
+      "tool_esperada": "ninguna",
+      "expectativa_preregistrada": {
+        "motivo": "Filtro compuesto Campo+Recurso + el promedio general del campo como un tercer valor de referencia no calculable junto al desglose filtrado.",
+        "veredicto_esperado": "\"SAN JOSÉ\" existe, pero el mismo filtro compuesto sigue bloqueando la pregunta."
+      },
+      "respuesta_esperada": {
+        "resumen": null,
+        "debe_incluir": [],
+        "no_debe": [],
+        "salvedades": []
+      },
+      "estado_curacion": "migrada",
+      "notas": null,
+      "huerfana": false
+    }
+  ]
+}
