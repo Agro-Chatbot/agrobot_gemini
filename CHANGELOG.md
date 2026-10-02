@@ -15,6 +15,7 @@ tooling local de sanity (`.claude/`, `.locks/`, `SANITY.md`, `history/`, `monito
 ## [Sin publicar]
 
 ### Changed
+- Conexión a `LichiReinoso/AgroBot-Hank` con credencial propia vía `/github-setup` (token en `.env` 600, helper local, `.env.example` con `GITHUB_TOKEN=`); `.gitignore` excluye `history/`, `.locks/`, `*.egg-info/` y backups del toolkit.
 - Python fijado en 3.11 (ADR-001): `requires-python` pasa a `>=3.11` y el proyecto usa un
   `.venv` local (ignorado por git); el sanity-auditor corre los tests con
   `.venv/bin/python -m pytest -q` (molde-personal: TECH-134).
