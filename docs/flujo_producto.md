@@ -1,4 +1,5 @@
 <!-- Generado por run-docs.sh el 2026-09-08 04:25 -->
+<!-- run-docs.sh vive en Chatbot-Hank_agro; en este proyecto los docs se mantienen a mano -->
 # Flujo del producto
 
 ## Flujo end-to-end

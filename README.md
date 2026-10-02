@@ -113,12 +113,13 @@ app.py          UI Streamlit (chat con historial de sesión)
 
 ## Documentación
 
-- `docs/arquitectura_sistema.md` — arquitectura del sistema.
 - `docs/api_src_chatbot.md` — referencia de la API interna (`src/chatbot/`).
 - `docs/flujo_producto.md` — flujo end-to-end del producto, con diagrama.
 - `docs/presentaciones/` — consignas del TP y propuesta.
 - `docs/preguntas/` — golden set de preguntas de ejemplo y su cobertura actual.
 - `docs/decisiones/` — decisiones de arquitectura de producto (ADR).
+
+Los docs de `docs/` se mantienen a mano leyendo el código (no hay generador en este proyecto).
 
 ## Nota
 

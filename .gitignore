@@ -21,3 +21,11 @@ data/*.xlsx
 
 # Secretos de Streamlit
 .streamlit/secrets.toml
+
+# Estado local del toolkit / build
+history/
+.locks/
+*.egg-info/
+.claude/settings.local.json
+*.bak
+.toolkit-bak/

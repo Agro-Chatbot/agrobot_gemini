@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "last_run": "2026-10-01 21:57",
+  "checks": [
+    {
+      "check": "architecture",
+      "status": "warn",
+      "findings": 5,
+      "summary": "Capas sanas; duplicacion en agent.py y charts/basic.py, except Exception amplio, decisiones sin ADR",
+      "agent": "architect",
+      "last_run": "2026-10-01 21:57"
+    },
+    {
+      "check": "security",
+      "status": "warn",
+      "findings": 2,
+      "summary": "Sin secretos ni exec dinamico; P3: sin auth/limite de costo en Streamlit, artefactos locales sin ignorar",
+      "agent": "security-reviewer",
+      "last_run": "2026-10-01 21:57"
+    },
+    {
+      "check": "code_sanity",
+      "status": "warn",
+      "findings": 5,
+      "summary": "Loop duplicado answer/answer_trace, guarda faltante en soporte.py (tasa<=0), duplicacion en aggregate.py",
+      "agent": "code-reviewer",
+      "last_run": "2026-10-01 21:57"
+    },
+    {
+      "check": "tests",
+      "status": "ok",
+      "findings": 0,
+      "summary": "146 passed, 1 skipped",
+      "agent": "—",
+      "last_run": "2026-10-01 21:57"
+    },
+    {
+      "check": "changelog_docs",
+      "status": "warn",
+      "findings": 3,
+      "summary": "ADR citan 02-System/decisions.json inexistente; README/flujo_producto sin entrada en CHANGELOG; huecos de numeracion ADR",
+      "agent": "architect",
+      "last_run": "2026-10-01 21:57"
+    },
+    {
+      "check": "trazabilidad",
+      "agent": "sanity_report.py",
+      "status": "n/a",
+      "findings": null,
+      "summary": "no disponible (sin scripts/trazabilidad.py)",
+      "metrics": null,
+      "last_run": "2026-10-01 21:57"
+    }
+  ],
+  "backlog": {
+    "ready": 0,
+    "pending": 0,
+    "blocked": 0,
+    "done": 0
+  },
+  "proposed_tickets": [
+    {
+      "title": "Extraer loop comun de answer/answer_trace en agent.py",
+      "priority": "P2",
+      "source_check": "code_sanity",
+      "rationale": "Duplicacion; cambios de flujo deben hacerse dos veces"
+    },
+    {
+      "title": "Guardar ha_requeridas contra tasa_media<=0 y validar tipos en soporte.py (+tests)",
+      "priority": "P2",
+      "source_check": "code_sanity",
+      "rationale": "Puede producir inf/negativos explicados como dato valido"
+    },
+    {
+      "title": "Corregir referencias a 02-System/decisions.json en ADR y documentar huecos de numeracion",
+      "priority": "P2",
+      "source_check": "changelog_docs",
+      "rationale": "Referencia rota en ADR-001/009/021/037"
+    },
+    {
+      "title": "Ignorar en .gitignore history/, .locks/, *.egg-info/ y decidir versionado del tooling sanity",
+      "priority": "P2",
+      "source_check": "security",
+      "rationale": "Artefactos con consultas/salidas LLM podrian commitearse"
+    },
+    {
+      "title": "Registrar en CHANGELOG cambios de README y flujo_producto.md",
+      "priority": "P3",
+      "source_check": "changelog_docs",
+      "rationale": "Cambios sin entrada"
+    },
+    {
+      "title": "Auth y tope de consultas/gasto si se expone la app Streamlit",
+      "priority": "P3",
+      "source_check": "security",
+      "rationale": "ANTHROPIC_API_KEY consumible sin limite"
+    },
+    {
+      "title": "Documentar como ADR: manejo de errores ChartError vs Exception",
+      "priority": "P3",
+      "source_check": "architecture",
+      "rationale": "Documentar como ADR; decision estructural sin ADR"
+    },
+    {
+      "title": "Documentar como ADR: answer/answer_trace y singleton del cliente LLM",
+      "priority": "P3",
+      "source_check": "architecture",
+      "rationale": "Documentar como ADR; decision estructural sin ADR"
+    }
+  ]
+}
