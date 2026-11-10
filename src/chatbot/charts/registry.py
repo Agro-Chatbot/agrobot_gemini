@@ -1,3 +1,5 @@
+import copy
+
 from .basic import (
     BAR_CHART_SCHEMA,
     HISTOGRAM_SCHEMA,
@@ -23,13 +25,43 @@ TOOLS = {
 }
 
 
+DATASETS = ("tasas", "precipitaciones")
+DATASET_TOOLS = {"bar_chart", "line_chart", "scatter_plot", "histogram", "pie_chart"}
+_DATASET_PROPERTY = {
+    "type": "string",
+    "enum": list(DATASETS),
+    "description": (
+        "Dataset sobre el que opera: 'tasas' (tasas de crecimiento, default) o "
+        "'precipitaciones' (lluvia en mm por campo y péntada)."
+    ),
+}
+
+
 def tool_schemas():
-    return [t["schema"] for t in TOOLS.values()]
+    schemas = copy.deepcopy([t["schema"] for t in TOOLS.values()])
+    for s in schemas:
+        if s["name"] in DATASET_TOOLS:
+            s["input_schema"]["properties"]["dataset"] = dict(_DATASET_PROPERTY)
+    return schemas
 
 
 def run_tool(name, df, params):
     if name not in TOOLS:
         raise ChartError(f"Tool desconocida: {name}.")
+    params = dict(params)
+    dataset = params.pop("dataset", "tasas")
+    if name not in DATASET_TOOLS and dataset != "tasas":
+        raise ChartError(f"{name} solo opera sobre tasas.")
+    if isinstance(df, dict):
+        if dataset not in df:
+            raise ChartError(
+                f"Dataset '{dataset}' no disponible. Disponibles: {', '.join(df)}."
+            )
+        df = df[dataset]
+    elif dataset != "tasas":
+        raise ChartError(
+            f"Dataset '{dataset}' no está cargado. Disponibles: tasas."
+        )
     try:
         return TOOLS[name]["fn"](df, **params)
     except TypeError as e:

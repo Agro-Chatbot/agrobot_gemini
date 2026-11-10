@@ -220,13 +220,13 @@ def test_filters_legacy_filter_col_filter_val_sigue_igual(filterable_df):
 
 # --- Verificación anti-P03: mismo nombre de Lote en distintos Campos (data real) ---
 
-_TAPALQUEII_PATH = Path(__file__).resolve().parents[1] / "data" / "tapalqueii.csv"
+_TAPALQUEII_PATH = Path(__file__).resolve().parents[1] / "data" / "tasas_crecimiento_tapalqueii.csv"
 
 
 @pytest.fixture(scope="module")
 def tapalqueii_df():
     if not _TAPALQUEII_PATH.exists():
-        pytest.skip("data/tapalqueii.csv no disponible en este entorno.")
+        pytest.skip("data/tasas_crecimiento_tapalqueii.csv no disponible en este entorno.")
     return pd.read_csv(_TAPALQUEII_PATH)
 
 

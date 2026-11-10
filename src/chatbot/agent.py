@@ -1,70 +1,144 @@
-"""Orquestación: consulta NL -> Claude elige tool -> gráfico -> explicación."""
+"""Orquestación: consulta NL -> Gemini elige tool -> gráfico -> explicación."""
 
 import matplotlib.pyplot as plt
+from google.genai import types
 
 from . import config, prompt
 from .charts import ChartError, run_tool, tool_schemas
 from .llm import get_client
 
-MAX_TOKENS = 1024
-MAX_RETRIES = 1  # reintentos si Claude pasa params inválidos
+# Gemini cuenta los tokens de "thinking" dentro de este límite: con 1024 puede
+# devolver respuestas vacías o cortadas.
+MAX_TOKENS = 4096
+MAX_RETRIES = 2  # reintentos si Gemini pasa params inválidos
 
 
 def _system_prompt(schema: str) -> str:
     return prompt.system_prompt(schema)
 
 
+# --- Helpers específicos de Gemini -------------------------------------------------
+
+
+def _gemini_tools() -> list[types.Tool]:
+    """Convierte los schemas de las tools (formato Anthropic: name, description,
+    input_schema) al formato de function calling de Gemini."""
+    declarations = [
+        types.FunctionDeclaration(
+            name=s["name"],
+            description=s.get("description", ""),
+            parameters_json_schema=s["input_schema"],
+        )
+        for s in tool_schemas()
+    ]
+    return [types.Tool(function_declarations=declarations)]
+
+
+def _generate(client, system: str, contents: list, allow_tools: bool = True):
+    """Llama al modelo y devuelve el `Content` de la respuesta (rol "model").
+
+    allow_tools=False declara las tools pero prohíbe llamarlas (modo NONE); se usa
+    en la explicación final, donde el historial ya contiene llamadas a funciones.
+    """
+    gen_config = types.GenerateContentConfig(
+        system_instruction=system,
+        max_output_tokens=MAX_TOKENS,
+        tools=_gemini_tools(),
+        tool_config=types.ToolConfig(
+            function_calling_config=types.FunctionCallingConfig(
+                mode="AUTO" if allow_tools else "NONE"
+            )
+        ),
+        # El loop de tools lo manejamos nosotros, no el SDK.
+        automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
+    )
+    resp = client.models.generate_content(
+        model=config.LLM_MODEL, contents=contents, config=gen_config
+    )
+    candidate = resp.candidates[0] if resp.candidates else None
+    if candidate is None or candidate.content is None:
+        reason = candidate.finish_reason if candidate else resp.prompt_feedback
+        raise RuntimeError(f"Gemini no devolvió contenido (motivo: {reason}).")
+    return candidate.content
+
+
+def _function_calls(content) -> list:
+    return [p.function_call for p in (content.parts or []) if p.function_call]
+
+
+def _text(content) -> str:
+    return "".join(
+        p.text for p in (content.parts or []) if p.text and not p.thought
+    ).strip()
+
+
+def _clean_args(value):
+    """Gemini devuelve los números como float (5 -> 5.0). Los enteros exactos se
+    convierten a int para que la validación de params de las tools no falle."""
+    if isinstance(value, float) and value.is_integer():
+        return int(value)
+    if isinstance(value, dict):
+        return {k: _clean_args(v) for k, v in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_clean_args(v) for v in value]
+    return value
+
+
+def _tool_response(fcs: list, first_response: dict) -> types.Content:
+    """Arma la respuesta a las llamadas de función. Gemini exige una respuesta por
+    cada llamada del turno anterior: la primera lleva el resultado real y las
+    demás (si el modelo emitió varias en paralelo) se marcan como no ejecutadas."""
+    parts = [
+        types.Part.from_function_response(name=fcs[0].name, response=first_response)
+    ]
+    for fc in fcs[1:]:
+        parts.append(
+            types.Part.from_function_response(
+                name=fc.name,
+                response={"error": "No ejecutada: se procesa una sola herramienta por turno."},
+            )
+        )
+    return types.Content(role="user", parts=parts)
+
+
+# --- Loop agéntico -----------------------------------------------------------------
+
+
 def answer(query: str, df, schema: str):
-    """Devuelve (fig, texto). `fig` es `None` si Claude responde sin elegir una tool
+    """Devuelve (fig, texto). `fig` es `None` si Gemini responde sin elegir una tool
     (p.ej. pide una aclaración o indica que el dato no existe). Lanza `RuntimeError`
     solo ante fallos reales (ni tool ni texto, o reintentos de `ChartError` agotados).
     """
     client = get_client()
-    messages = [{"role": "user", "content": query}]
+    contents = [types.Content(role="user", parts=[types.Part(text=query)])]
     system = _system_prompt(schema)
 
     for attempt in range(MAX_RETRIES + 1):
-        resp = client.messages.create(
-            model=config.LLM_MODEL,
-            max_tokens=MAX_TOKENS,
-            system=system,
-            tools=tool_schemas(),
-            tool_choice={"type": "auto", "disable_parallel_tool_use": True},
-            messages=messages,
-        )
+        model_content = _generate(client, system, contents)
 
-        tool_use = next((b for b in resp.content if b.type == "tool_use"), None)
-        if tool_use is None:
-            # Claude respondió sin elegir tool (caso distinto de params inválidos).
-            text = "".join(b.text for b in resp.content if b.type == "text").strip()
+        fcs = _function_calls(model_content)
+        if not fcs:
+            # Gemini respondió sin elegir tool (caso distinto de params inválidos).
+            text = _text(model_content)
             if text:
                 return None, text
             raise RuntimeError(
-                "Claude no eligió ninguna tool y tampoco devolvió texto."
+                "Gemini no eligió ninguna tool y tampoco devolvió texto."
             )
 
+        fc = fcs[0]
+        args = _clean_args(dict(fc.args or {}))
+
         try:
-            fig, summary = run_tool(tool_use.name, df, dict(tool_use.input))
+            fig, summary = run_tool(fc.name, df, args)
         except ChartError as e:
-            # Devolver el error a Claude para que corrija los parámetros
-            messages.append({"role": "assistant", "content": resp.content})
-            messages.append(
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "tool_result",
-                            "tool_use_id": tool_use.id,
-                            "content": f"Error: {e}",
-                            "is_error": True,
-                        }
-                    ],
-                }
-            )
+            # Devolver el error a Gemini para que corrija los parámetros
+            contents.append(model_content)
+            contents.append(_tool_response(fcs, {"error": str(e)}))
             continue
 
         try:
-            explanation = _explain(client, system, messages, resp.content, tool_use, summary)
+            explanation = _explain(client, system, contents, model_content, fcs, summary)
         except Exception:
             plt.close(fig)
             raise
@@ -83,61 +157,43 @@ def answer_trace(query: str, df, schema: str) -> dict:
     batch por una sola pregunta.
     """
     client = get_client()
-    messages = [{"role": "user", "content": query}]
+    contents = [types.Content(role="user", parts=[types.Part(text=query)])]
     system = _system_prompt(schema)
     calls: list[dict] = []
 
-    # Forzamos una sola tool por turno (disable_parallel_tool_use): el diseño elige un
-    # gráfico, y sin esto el agente a veces emite varios tool_use en paralelo y rompe el loop.
+    # Solo se procesa una tool por turno: si Gemini emite varias en paralelo, se
+    # ejecuta la primera y las demás se devuelven como "no ejecutadas".
     for attempt in range(MAX_RETRIES + 1):
-        resp = client.messages.create(
-            model=config.LLM_MODEL,
-            max_tokens=MAX_TOKENS,
-            system=system,
-            tools=tool_schemas(),
-            tool_choice={"type": "auto", "disable_parallel_tool_use": True},
-            messages=messages,
-        )
+        model_content = _generate(client, system, contents)
 
-        tool_use = next((b for b in resp.content if b.type == "tool_use"), None)
-        if tool_use is None:
-            text = "".join(b.text for b in resp.content if b.type == "text").strip()
+        fcs = _function_calls(model_content)
+        if not fcs:
             return {
                 "query": query,
                 "calls": calls,
                 "summary": None,
-                "explanation": text,
+                "explanation": _text(model_content),
                 "status": "no_tool",
             }
 
-        call = {"name": tool_use.name, "input": dict(tool_use.input)}
+        fc = fcs[0]
+        args = _clean_args(dict(fc.args or {}))
+        call = {"name": fc.name, "input": args}
         calls.append(call)
 
         try:
-            fig, summary = run_tool(tool_use.name, df, dict(tool_use.input))
+            fig, summary = run_tool(fc.name, df, args)
         except ChartError as e:
             call["error"] = str(e)
-            messages.append({"role": "assistant", "content": resp.content})
-            messages.append(
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "tool_result",
-                            "tool_use_id": tool_use.id,
-                            "content": f"Error: {e}",
-                            "is_error": True,
-                        }
-                    ],
-                }
-            )
+            contents.append(model_content)
+            contents.append(_tool_response(fcs, {"error": str(e)}))
             continue
 
         # La tool call ya se resolvió (es lo que el doc quiere mostrar). Si el paso de
         # explicación falla —p. ej. el LLM no devuelve texto en esta corrida— igual
         # conservamos la llamada y los datos, con una nota en vez de abortar la pregunta.
         try:
-            explanation = _explain(client, system, messages, resp.content, tool_use, summary)
+            explanation = _explain(client, system, contents, model_content, fcs, summary)
             status = "ok"
         except Exception as e:  # noqa: BLE001
             explanation = f"_(El agente generó el gráfico; no devolvió texto explicativo: {e})_"
@@ -162,30 +218,21 @@ def answer_trace(query: str, df, schema: str) -> dict:
     }
 
 
-def _explain(client, system, messages, assistant_content, tool_use, summary):
-    messages = messages + [
-        {"role": "assistant", "content": assistant_content},
-        {
-            "role": "user",
-            "content": [
-                {
-                    "type": "tool_result",
-                    "tool_use_id": tool_use.id,
-                    "content": (
-                        f"Gráfico '{tool_use.name}' generado. Datos:\n{summary}\n\n"
-                        "Explicá en 2-4 frases qué muestra el gráfico y el insight principal."
-                    ),
-                }
-            ],
-        },
+def _explain(client, system, contents, model_content, fcs, summary):
+    contents = contents + [
+        model_content,
+        _tool_response(
+            fcs,
+            {
+                "result": (
+                    f"Gráfico '{fcs[0].name}' generado. Datos:\n{summary}\n\n"
+                    "Explicá en 2-4 frases qué muestra el gráfico y el insight principal."
+                )
+            },
+        ),
     ]
-    resp = client.messages.create(
-        model=config.LLM_MODEL,
-        max_tokens=MAX_TOKENS,
-        system=system,
-        messages=messages,
-    )
-    text = "".join(b.text for b in resp.content if b.type == "text").strip()
+    content = _generate(client, system, contents, allow_tools=False)
+    text = _text(content)
     if not text:
-        raise RuntimeError("Claude no devolvió texto en la explicación.")
+        raise RuntimeError("Gemini no devolvió texto en la explicación.")
     return text

@@ -1,7 +1,10 @@
+import sys
 from pathlib import Path
 
 import pandas as pd
 from pandas.api.types import is_numeric_dtype
+
+from . import config
 
 _MONTH_TO_ESTACION = {
     12: "Verano", 1: "Verano", 2: "Verano",
@@ -40,6 +43,36 @@ def load_csv(path: str | Path) -> pd.DataFrame:
     return enrich_temporal(df)
 
 
+def load_precipitaciones(path: str | Path) -> pd.DataFrame:
+    # Header en latin-1 y filas en UTF-8: se lee como UTF-8 con reemplazo y se
+    # descartan año/mes/dia por posición (el nombre de "año" sale roto).
+    df = pd.read_csv(path, encoding="utf-8", encoding_errors="replace")
+    df = df.rename(columns={"CAMPO": "Campo", "milimetros": "Precipitación mm"})
+    df["Fecha"] = pd.to_datetime(df["fecha"].astype(str), format="%Y%m%d")
+    df = df[["Fecha", "Campo", "Precipitación mm"]]
+    return enrich_temporal(df)
+
+
+def load_datasets(
+    tasas_path: str | Path | None = None, precip_path: str | Path | None = None
+) -> tuple[dict[str, pd.DataFrame], str]:
+    tasas = load_csv(tasas_path or config.CSV_PATH)
+    dfs = {"tasas": tasas}
+    schema = "### Dataset `tasas`\n" + schema_summary(tasas)
+    precip_path = Path(precip_path or config.PRECIP_CSV_PATH)
+    if not precip_path.exists():
+        print(
+            f"Aviso: no se encontró el CSV de precipitaciones ({precip_path}); "
+            "se usa solo el dataset de tasas.",
+            file=sys.stderr,
+        )
+        return dfs, schema
+    precip = load_precipitaciones(precip_path)
+    dfs["precipitaciones"] = precip
+    schema += "\n\n### Dataset `precipitaciones`\n" + schema_summary(precip)
+    return dfs, schema
+
+
 def is_numeric(df: pd.DataFrame, column: str) -> bool:
     return is_numeric_dtype(df[column])
 
@@ -54,7 +87,7 @@ def _temporal_desc(fecha: pd.Series) -> str:
 
 
 def _coverage_line(fecha: pd.Series) -> str:
-    """Marca las campañas (años calendario, ADR-006) con cobertura parcial en los
+    """Marca las campañas (años calendario, HANK-ADR-006) con cobertura parcial en los
     bordes del rango de fechas (al menos la primera y la última)."""
     valid = fecha.dropna()
     if valid.empty:

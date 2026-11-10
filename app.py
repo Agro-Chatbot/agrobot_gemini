@@ -8,7 +8,7 @@ import streamlit as st
 from chatbot import config, ui_theme
 from chatbot.agent import answer
 from chatbot.charts import ChartError
-from chatbot.data import load_csv, schema_summary
+from chatbot.data import load_datasets
 
 st.set_page_config(page_title="Chatbot de datos", page_icon="🌾", layout="centered")
 st.markdown(ui_theme.THEME_CSS, unsafe_allow_html=True)
@@ -17,8 +17,7 @@ st.title("Chatbot de datos")
 
 @st.cache_data
 def _load():
-    df = load_csv(config.CSV_PATH)
-    return df, schema_summary(df)
+    return load_datasets()
 
 
 try:
@@ -32,7 +31,8 @@ except Exception:
     st.error("Error al cargar el dataset. Contactá al administrador.")
     st.stop()
 
-st.caption(f"Dataset: {config.CSV_PATH.name} — {len(df)} filas, {len(df.columns)} columnas")
+_nombres = {"tasas": config.CSV_PATH.name, "precipitaciones": config.PRECIP_CSV_PATH.name}
+st.caption("Datasets: " + " · ".join(f"{_nombres[k]} — {len(v)} filas" for k, v in df.items()))
 
 if "history" not in st.session_state:
     st.session_state.history = []

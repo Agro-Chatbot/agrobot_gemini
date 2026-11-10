@@ -1,14 +1,14 @@
-import anthropic
+from google import genai
 
 from . import config
 
-_client: anthropic.Anthropic | None = None
+_client: genai.Client | None = None
 
 
-def get_client() -> anthropic.Anthropic:
+def get_client() -> genai.Client:
     global _client
     if _client is None:
-        if not config.ANTHROPIC_API_KEY:
-            raise RuntimeError("Falta ANTHROPIC_API_KEY en el .env.")
-        _client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY)
+        if not config.GEMINI_API_KEY:
+            raise RuntimeError("Falta GEMINI_API_KEY en el .env.")
+        _client = genai.Client(api_key=config.GEMINI_API_KEY)
     return _client

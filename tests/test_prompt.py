@@ -25,9 +25,9 @@ def test_orden_de_secciones_no_vacias_coincide_con_secciones():
         "filtros": "Parámetros de filtrado",
         "recursos": None,
         "graficos": None,
-        "soporte": "soporte_animal",
+        "soporte": "## Tool soporte_animal",
         "ganaderia": None,
-        "clima": None,
+        "clima": "Lluvia y variables climáticas",
         "limites": None,
     }
 
@@ -169,36 +169,47 @@ def test_seccion_limites_cubre_reglas():
     assert "No afirmes ni niegues la existencia de valores del dataset sin evidencia" in texto
 
 
-def test_clima_nombra_variables_climaticas_ausentes():
+def test_clima_nombra_los_dos_datasets_y_la_lluvia_disponible():
     texto = prompt.system_prompt("MI_ESQUEMA")
 
-    assert "no tiene** columnas de lluvia, precipitación, mm ni temperatura" in texto
+    assert "`tasas`" in texto and "`precipitaciones`" in texto
+    assert "Precipitación mm" in texto
+    assert "no tiene** columnas de lluvia" not in texto
 
 
-def test_clima_ordena_responder_sin_tool_call_con_alternativa():
+def test_clima_lluvia_se_agrega_con_sum_y_2026_es_parcial():
     texto = prompt.system_prompt("MI_ESQUEMA")
 
-    assert "respondé **sin tool call**" in texto
-    assert "ofrecé la consulta expresable" in texto
+    assert 'agg="sum"' in texto
+    assert "2026 es un año parcial" in texto
+    assert "2026-08-26" in texto
 
 
-def test_clima_prohibe_grafico_sustituto_no_pedido():
+def test_clima_expresiones_relativas_contra_rango_del_dataset_elegido():
     texto = prompt.system_prompt("MI_ESQUEMA")
 
-    assert "Nunca generes un gráfico sustituto no pedido" in texto
+    assert "contra el rango del dataset elegido" in texto
 
 
-def test_clima_anio_seco_no_determinable():
+def test_clima_temperatura_ausente_sin_tool_call_ni_proxy():
     texto = prompt.system_prompt("MI_ESQUEMA")
 
-    assert "no determinables" in texto
-    assert "año seco" in texto.lower() or "Año seco" in texto
+    assert "temperatura no existe" in texto
+    assert "**sin tool call**" in texto
+    assert "no uses un proxy" in texto
+
+
+def test_clima_prohibe_atribucion_causal_y_cruce_en_una_tool_call():
+    texto = prompt.system_prompt("MI_ESQUEMA")
+
+    assert "No atribuyas causalidad" in texto
+    assert "dos gráficos" in texto
 
 
 def test_clima_atribucion_de_terceros_no_es_hallazgo_de_datos():
     texto = prompt.system_prompt("MI_ESQUEMA")
 
-    assert "nunca la presentes como" in texto
+    assert "nunca la presentes" in texto
     assert "un hallazgo de los datos" in texto
 
 
